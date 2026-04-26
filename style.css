@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgba(125, 74, 10, 0.56);
+    background-image: url(images/back_3.jpg);
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+   
+}
+header{
+    height: 80px;
+    width: 90%;
+    border-radius: 40px;
+    background-color:rgba(125, 74, 10, 0.90);
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-content: center;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 40px;
+    gap: 15px;
+}
+

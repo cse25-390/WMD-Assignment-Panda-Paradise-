@@ -4,83 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Paradise</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/aboutus.css">
+
 
 
 </head>
 <body>
-    <header>
+   
+    <header class="navbar navbar-expand-lg">
         <div class="logo">
-            <img src="images/panda logo.png">
-            <h2>Panda Paradise</h2>
+            <img src="images/panda_logo.png" alt="Panda Paradise logo">
         </div>
+        <h3>PandaParadise</h3>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="catalogue.html">Catalogue</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <button>Profile</button>
-            </ul>
-        </nav>
-
-        
-    </header>
-     
-    <div class="Our Story">
-        <h1>OUR STORY</h1>
-        <p>Panda Paradise was created two years ago with a mission to create<br>
-           stylish, affordable clothing for trend conscious individuals
-        </p>
-        <p>What started as a dream to instill happiness through fashion became<br>
-            reality through the support of family ,friends and the community
-        </p>
-    </div>
-
-    <div class="Our Mission">
-        <h4>OUR MISSION</h4>
-        <p>To provide stylish outfits that <br>make people comfortable at affordable prices</p>
-    </div>
-
-    <div class="Our Values">
-        <h4>OUR VALUES</h4>
-        <p>We value quality affordable and individualism<br>dedicated to crafting inclusive fashion that empowers everyone</p>
-    </div>
-
-    <div class="Our Vision">
-        <h4>OUR VISION</h4>
-        <p>To inspire confidence and<br>uniqueness through fashion</p>
-    </div>
-    <div>
-        <button>
-            <a href="catalogue.html" class="btn">Explore our collection</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="nav-links">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogue.html">Catalogue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="profile-link">
+                <a href="profile.html">Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="story-section">
+        <h1>OUR STORY</h1>
+        <p>Panda Paradise was created two years ago with a mission to create stylish, affordable clothing for trend-conscious individuals.</p>
+        <p>What started as a dream to instill happiness through fashion became reality through the support of family, friends, and the community.</p>
+    </section>
+
+    <section class="story-cards">
+        <article class="story-card">
+            <h4>OUR MISSION</h4>
+            <p>To provide stylish outfits that make people comfortable at affordable prices.</p>
+        </article>
+
+        <article class="story-card">
+            <h4>OUR VALUES</h4>
+            <p>We value quality, affordable, and individual fashion dedicated to crafting inclusive styles that empower everybody.</p>
+        </article>
+
+        <article class="story-card">
+            <h4>OUR VISION</h4>
+            <p>To inspire confidence and uniqueness through fashion.</p>
+        </article>
+    </section>
+
+    <div class="cta">
+        <a href="catalogue.html" class="btn">Explore our collection</a>
     </div>
+
     <footer>
-        <div class="Contact Us">
-            <h4>Contact Us</h4>
-            <p>Botswana,Gaborone<br>+267 78202115<br>+267 77046311<br>pandaparadise5@gmail.com</p>
+        <div class="footer-sections">
+            <div class="footer-card contact-us">
+                <h4>Contact Us</h4>
+                <p>Botswana, Gaborone<br>+267 78202115<br>+267 77046311<br>pandaparadise5@gmail.com</p>
+            </div>
+
+            <div class="footer-card about-us">
+                <h4>Panda Paradise</h4>
+                <p>Trendy fashion for teens and adults.</p>
+            </div>
+
+            <div class="footer-card follow-us">
+                <h4>Follow Us</h4>
+                <div class="social-item">
+                    <img src="images/facebook.png" alt="Facebook icon">
+                    <p>Panda Paradise</p>
+                </div>
+                <div class="social-item">
+                    <img src="images/tiktok.png" alt="TikTok icon">
+                    <p>panda paradise4</p>
+                </div>
+            </div>
         </div>
-
-        <div class="Panda Paradise"> 
-            <h4>Panda Paradise</h4>
-            <p>Trendy fashion for teen and adults</p>
-
+        <div class="footer-copy">
+            <p>@ 2026 Panda Paradise. All rights reserved.</p>
         </div>
-
-        <div class="Follow Us">
-            <h4>Follow Us</h4>
-            <img src="images/facebook.png">
-            <p>Panda Paradise</p>
-
-            <img src="images/tiktok.png">
-            <p>panda paradise4</p>
-
-        </div>
-         <p>@ 2026 Panda Paradise.All rights reserved.</p>
-
-    </footer>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+

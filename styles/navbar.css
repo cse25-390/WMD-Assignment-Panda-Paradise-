@@ -1,0 +1,29 @@
+/* Shared navbar overrides for Bootstrap-collapsible header */
+
+/* Your existing pages style the <header> directly; keep Bootstrap from overriding too much. */
+.navbar-custom {
+  padding: 0;
+}
+
+/* Make the logo/title align nicely when menu is collapsed */
+.navbar-custom .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Prevent legacy mobile CSS from forcing the ul into a wrapped horizontal layout */
+.navbar-custom .nav-links {
+  width: 100%;
+}
+
+.navbar-custom .nav-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* When collapsed, Bootstrap adds display block/flex; ensure spacing */
+.navbar-custom .navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+}
+

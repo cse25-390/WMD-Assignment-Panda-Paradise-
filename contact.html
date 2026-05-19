@@ -4,39 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Paradise</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/contact.css">
+
 </head>
 <body>
-    <header>
+    <header class="navbar navbar-expand-lg">
         <div class="logo">
-            <img src="images/panda logo.png">
-            <h2>Panda Paradise</h2>
+            <img src="images/panda_logo.png">
         </div>
+        <h3>PandaParadise</h3>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="catalogue.html">Catalogue</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <button>Profile</button>
-                
-            </ul>
-        </nav>
-        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="nav-links">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogue.html">Catalogue</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <a class="profile-button" href="profile.html">Profile</a>
+        </div>
     </header>
     <div class="Form">
         <h2>Send Message</h2>
         <form>
             <h4>Name</h4>
-            <input type="Text" placeholder="Enter Name" required>
+            <input type="text" placeholder="Enter Name" required>
 
             <h4>Email Address</h4>
-            <input type="Text" placeholder="Enter Address" required>
+            <input type="text" placeholder="Enter Address" required>
 
             <h4>Message</h4>
-            <input type="Text" placeholder="Enter Message"required> 
+            <textarea placeholder="Enter Message" required></textarea>
 
             <div class="button">
              <button>SEND</button>
@@ -57,27 +65,35 @@
     </div>
 
     <footer>
-        <div class="Contact Us">
-            <h4>Contact Us</h4>
-            <p>Botswana,Gaborone<br>+267 78202115<br>+267 77046311<br>pandaparadise5@gmail.com</p>
+        <div class="footer-sections">
+            <div class="footer-card contact-us">
+                <h4>Contact Us</h4>
+                <p>Botswana, Gaborone<br>+267 78202115<br>+267 77046311<br>pandaparadise5@gmail.com</p>
+            </div>
+
+            <div class="footer-card about-us">
+                <h4>Panda Paradise</h4>
+                <p>Trendy fashion for teen and adults</p>
+            </div>
+
+            <div class="footer-card follow-us">
+                <h4>Follow Us</h4>
+                <div class="social-item">
+                    <img src="images/facebook.png">
+                    <p>Panda Paradise</p>
+                </div>
+                <div class="social-item">
+                    <img src="images/tiktok.png">
+                    <p>panda paradise4</p>
+                </div>
+            </div>
         </div>
 
-        <div class="Panda Paradise"> 
-            <h4>Panda Paradise</h4>
-            <p>Trendy fashion for teen and adults</p>
-
+        <div class="footer-copy">
+            <p>@ 2026 Panda Paradise. All rights reserved.</p>
         </div>
-
-        <div class="Follow Us">
-            <h4>Follow Us</h4>
-            <img src="images/facebook.png">
-            <p>Panda Paradise</p>
-
-            <img src="images/tiktok.png">
-            <p>panda paradise4</p>
-
-        </div>
-         <p>@ 2026 Panda Paradise.All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

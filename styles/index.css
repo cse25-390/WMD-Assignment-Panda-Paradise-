@@ -3,9 +3,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #1f1f1f;
-    background: linear-gradient(180deg, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0.25) 100%),
+    background: linear-gradient(180deg, rgba(255,255,255,0.35)),
         url("../images/landing.png") center/cover no-repeat fixed;
 }
 
@@ -14,7 +13,6 @@ body {
 }
 
 header {
-    position: sticky;
     top: 18px;
     z-index: 10;
     height: 80px;
@@ -37,11 +35,12 @@ header {
     padding: 8px;
     border-radius: 60px;
     min-width: 64px;
+    margin-left: 10px;
 }
 
 .logo img {
     display: block;
-    width: 54px;
+    width: 40px;
     height: auto;
 }
 
@@ -156,73 +155,74 @@ header .button {
 }
 
 footer {
-    width: min(92%, 1000px);
-    margin: 60px auto 24px;
-    padding: 32px 24px;
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto 40px;
+    padding: 30px 20px 0;
     background: rgba(125, 74, 10, 0.85);
-    border-radius: 24px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+    border-radius: 32px;
 }
 
-.Contact.Us,
-.Panda.Paradise,
-.Follow.Us {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    border-radius: 18px;
+.footer-sections {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 24px;
+    align-items: stretch;
+    margin-bottom: 24px;
+}
+
+.footer-card {
     background: rgba(220, 194, 140, 0.78);
-    text-align: center;
-    color: #1b1308;
+    padding: 15px;
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,0.72);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
-footer h4 {
-    margin: 0 0 12px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #110d06;
+.footer-card h4 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 20px;
+    color: #111;
 }
 
-footer p {
-    margin: 8px 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #2b241b;
+.footer-card p {
+    margin: 0;
+    color: #30281f;
+    line-height: 1.2;
 }
 
-.Follow.Us {
-    display: grid;
-    gap: 14px;
-    justify-items: center;
-    padding-top: 12px;
-}
-
-.Follow.Us img {
-    width: 38px;
-    height: 38px;
-    padding: 10px;
-    background: rgba(27, 19, 8, 0.9);
-    border-radius: 50%;
-    display: inline-flex;
-    vertical-align: middle;
-}
-
-.Follow.Us img + p {
-    display: inline-flex;
+.footer-card .social-item {
+    display: flex;
     align-items: center;
-    gap: 12px;
-    margin: 0;
-    font-size: 0.95rem;
-    color: #1b1308;
+    gap: 5px;
+    margin-bottom: 10px;
 }
 
-.Follow.Us p {
-    margin: 0;
-    padding-left: 6px;
+.footer-card .social-item img {
+    width: 28px;
+    height: auto;
+    border-radius: 80px;
+    padding: 3px;
 }
+
+.footer-copy {
+    text-align: center;
+    padding: 12px 0 16px;
+}
+
+.footer-copy p {
+    margin: 0;
+    color: #30281f;
+    font-size: 0.95rem;
+}
+
 
 @media (max-width: 880px) {
     header {

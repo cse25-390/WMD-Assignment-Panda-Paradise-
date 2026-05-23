@@ -72,7 +72,7 @@ header .nav-links li {
 
 header .nav-links li a {
     text-decoration: none;
-    color: #111;
+    color: #f5f1ea;
     font-weight: 700;
     transition: color 0.25s ease;
 }
